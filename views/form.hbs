@@ -1,11 +1,12 @@
 <html lang="en">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Team registration</title>
-  <link rel="shortcut icon" type="image/png" href="/img/logo_only1.png"/>
+  <link rel="shortcut icon" type="image/png" href="/img/logo_only1.png" />
   <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
- <link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
+  <link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
   <link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
 
   <!-- Font Awesome Icon -->
@@ -16,13 +17,13 @@
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
 <style>
-input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -33,7 +34,8 @@ label {
   font-family: 'Raleway', sans-serif;
 }
 </style>
-<body> 
+
+<body>
   <!-- Header -->
   <header id="header" class="transparent-navbar">
     <!-- container -->
@@ -42,7 +44,7 @@ label {
       <div class="navbar-header">
         <!-- Logo -->
         <div class="navbar-brand">
-          <a class="logo" href="index.html">
+          <a class="logo" href="/">
             <img class="logo-img" src="./img/image.png" alt="logo">
             <img class="logo-alt-img" src="./img/logo_final13.png" alt="logo">
           </a>
@@ -53,7 +55,9 @@ label {
       <!-- Navigation -->
       <nav id="nav">
         <ul class="main-nav nav navbar-nav navbar-right">
-          <li><h3>Team Registration</h3></li>
+          <li>
+            <h3>Team Registration</h3>
+          </li>
         </ul>
       </nav>
       <!-- /Navigation -->
@@ -61,297 +65,293 @@ label {
     <!-- /container -->
   </header>
   <!-- /Header -->
-<center>
-	<div class="row">
-	 <form class="col s12" method="post" action="">
-   <div style="background-color: white">
-     <div style="width:80%">
-        <div class="row" style="margin-top: 100px">
-            <div class="input-field col s12">
-              <i class="material-icons prefix"><i class="fa fa-users" aria-hidden="true"></i></i>
-              <input id="team_name" type="text" class="validate" name="team_name" required >
-              <label for="team_name">Team Name</label>
-            </div>
-		</div>
+  <center>
     <div class="row">
-			<div class="input-field col s12">
-          <i class="material-icons prefix"><i class="fa fa-university" aria-hidden="true"></i></i>
-          <input id="coll_name" type="text" class="validate" name="coll_name" required >
-          <label for="coll_name">College Name</label>
+      <form class="col s12" method="post" action="">
+        <div style="background-color: white">
+          <div style="width:80%">
+            <div class="row" style="margin-top: 100px">
+              <div class="input-field col s12">
+                <i class="material-icons prefix"><i class="fa fa-users" aria-hidden="true"></i></i>
+                <input id="team_name" type="text" class="validate" name="team_name" required>
+                <label for="team_name">Team Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix"><i class="fa fa-university" aria-hidden="true"></i></i>
+                <input id="coll_name" type="text" class="validate" name="coll_name" required>
+                <label for="coll_name">College Name</label>
+              </div>
+            </div>
+          </div>
         </div>
-       </div></div></div>
-        <div style="background-color: whitesmoke;padding-top: 10px"> <div style="width:80%">
-     <h3>Member 1</h3>
-      <div class="row">
-			<div class="input-field col s12">
-          <i class="material-icons prefix">account_circle</i>
-          <input id="full_name1" type="text" class="validate" name="full_name1" required >
-          <label for="full_name1">Full Name</label>
+        <div style="background-color: whitesmoke;padding-top: 10px">
+          <div style="width:80%">
+            <h3>Member 1</h3>
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="full_name1" type="text" class="validate" name="full_name1" required>
+                <label for="full_name1">Full Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">calendar_today</i>
+                <input id="dob1" type="date" class="datepicker" name="dob1">
+                <label for="dob1">Date of birth</label>
+              </div>
+              <div class="input-field col s6" style="padding-left: 10px">
+                <select name="gender1">
+                  <option value="male" selected>Male</option>
+                  <option value="female">Female</option>
+                </select>
+                <label>Gender</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">email</i>
+                <input id="email1" name="email1" type="email" class="validate">
+                <label for="email1">Email</label>
+              </div>
+              <div class="input-field col s6">
+                <i class="material-icons prefix">phone</i>
+                <input id="your_mob1" type="number" class="validate" name="mobile1" required>
+                <label for="your_mob1">Mobile no.</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix"><i class="fa fa-github" aria-hidden="true"></i></i>
+                <input id="git_url1" type="url" class="validate" name="git_url1" required>
+                <label for="git_url1">GitHub URL</label>
+              </div>
+              <div class="input-field col s6">
+                <i class="material-icons prefix"><i class="fa fa-linkedin-square" aria-hidden="true"></i></i>
+                <input id="link_url1" type="url" class="validate" name="link_url1" required>
+                <label for="link_url1">LinkedIn URL</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix"><i class="fa fa-twitter" aria-hidden="true"></i></i>
+                <input id="twit_url1" type="url" class="validate" name="twit_url1" required>
+                <label for="twit_url1">Twitter URL</label>
+              </div>
+              <div class="input-field col s6">
+                <i class="material-icons prefix"><i class="fa fa-facebook-square" aria-hidden="true"></i></i>
+                <input id="face_url1" type="url" class="validate" name="face_url1" required>
+                <label for="face_url1">Facebook URL</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="file-field input-field col s6">
+                <div class="btn">
+                  <span>Upload resume</span>
+                  <input type="file" name="resume1">
+                </div>
+                <div class="file-path-wrapper">
+                  <input class="file-path validate" type="text">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-		</div>
-      <div class="row">
-       <div class="input-field col s6">
-          <i class="material-icons prefix">calendar_today</i>
-           <input id="dob1" type="date" class="datepicker" name="dob1">
-          <label for="dob1">Date of birth</label>
+        <div style="background-color: white;padding-top: 10px">
+          <div style="width:80%">
+            <h3>Member 2</h3>
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="full_name2" type="text" class="validate" name="full_name2" required>
+                <label for="full_name2">Full Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">calendar_today</i>
+                <input id="dob2" type="date" class="datepicker" name="dob2">
+                <label for="dob2">Date of birth</label>
+              </div>
+              <div class="input-field col s6" style="padding-left: 10px">
+                <select name="gender2">
+                  <option value="male" selected>Male</option>
+                  <option value="female">Female</option>
+                </select>
+                <label>Gender</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">email</i>
+                <input id="email2" name="email2" type="email" class="validate">
+                <label for="email2">Email</label>
+              </div>
+              <div class="input-field col s6">
+                <i class="material-icons prefix">phone</i>
+                <input id="your_mob2" type="number" class="validate" name="mobile2" required>
+                <label for="your_mob2">Mobile no.</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix"><i class="fa fa-github" aria-hidden="true"></i></i>
+                <input id="git_url2" type="url" class="validate" name="git_url2" required>
+                <label for="git_url2">GitHub URL</label>
+              </div>
+              <div class="input-field col s6">
+                <i class="material-icons prefix"><i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </i>
+                <input id="link_url2" type="url" class="validate" name="link_url2" required>
+                <label for="link_url2">LinkedIn URL</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix"><i class="fa fa-twitter" aria-hidden="true"></i></i>
+                <input id="twit_url2" type="url" class="validate" name="twit_url2" required>
+                <label for="twit_url2">Twitter URL</label>
+              </div>
+              <div class="input-field col s6">
+                <i class="material-icons prefix"><i class="fa fa-facebook-square" aria-hidden="true"></i></i>
+                <input id="face_url2" type="url" class="validate" name="face_url2" required>
+                <label for="face_url2">Facebook URL</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix"><i class="fa fa-address-card" aria-hidden="true"></i></i>
+                <input id="face_url2" type="url" class="validate" name="resume_url" required>
+                <label for="face_url2">A Google Drive link or a Portfolio Website</label>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="input-field col s6" style="padding-left: 10px">
-    <select name="gender1">
-      <option value="male" selected>Male</option>
-      <option value="female">Female</option>
-    </select>
-    <label>Gender</label>
-        </div>   
-      </div>
-      <div class="row">
-       <div class="input-field col s6">
-          <i class="material-icons prefix">email</i>
-          <input id="email1" name="email1" type="email" class="validate">
-          <label for="email1">Email</label>
-        </div>
-        <div class="input-field col s6">
-          <i class="material-icons prefix">phone</i>
-          <input id="your_mob1" type="number" class="validate" name="mobile1" required>
-          <label for="your_mob1">Mobile no.</label>
-        </div>
-      </div>
-      <div class="row">
-			<div class="input-field col s6">
-          <i class="material-icons prefix"><i class="fa fa-github" aria-hidden="true"></i></i>
-          <input id="git_url1" type="url" class="validate" name="git_url1" required>
-          <label for="git_url1">GitHub URL</label>
-        </div>
-        <div class="input-field col s6">
-          <i class="material-icons prefix"><i class="fa fa-linkedin-square" aria-hidden="true"></i></i>
-          <input id="link_url1" type="url" class="validate" name="link_url1" required>
-          <label for="link_url1">LinkedIn URL</label>
-        </div>
-		</div>
-   <div class="row">
-			<div class="input-field col s6">
-          <i class="material-icons prefix"><i class="fa fa-twitter" aria-hidden="true"></i></i>
-          <input id="twit_url1" type="url" class="validate" name="twit_url1" required>
-          <label for="twit_url1">Twitter URL</label>
-        </div>
-        <div class="input-field col s6">
-          <i class="material-icons prefix"><i class="fa fa-facebook-square" aria-hidden="true"></i></i>
-          <input id="face_url1" type="url" class="validate" name="face_url1" required>
-          <label for="face_url1">Facebook URL</label>
-        </div>
-		</div>
-   <div class="row">
-   <div class="file-field input-field col s6">
-      <div class="btn">
-        <span>Upload resume</span>
-        <input type="file" name="resume1">
-      </div>
-      <div class="file-path-wrapper">
-        <input class="file-path validate" type="text">
-       </div>
-      </div>
-     </div>
-    </div>
-    </div>
-   <div style="background-color: white;padding-top: 10px"> <div style="width:80%">
-     <h3>Member 2</h3>
-      <div class="row">
-			<div class="input-field col s12">
-          <i class="material-icons prefix">account_circle</i>
-          <input id="full_name2" type="text" class="validate" name="full_name2" required>
-          <label for="full_name2">Full Name</label>
-        </div>
-		</div>
-      <div class="row">
-       <div class="input-field col s6">
-          <i class="material-icons prefix">calendar_today</i>
-           <input id="dob2" type="date" class="datepicker" name="dob2">
-          <label for="dob2">Date of birth</label>
-        </div>
-        <div class="input-field col s6" style="padding-left: 10px">
-    <select name="gender2">
-      <option value="male" selected>Male</option>
-      <option value="female">Female</option>
-    </select>
-    <label>Gender</label>
-        </div>   
-      </div>
-      <div class="row">
-       <div class="input-field col s6">
-          <i class="material-icons prefix">email</i>
-          <input id="email2" name="email2" type="email" class="validate">
-          <label for="email2">Email</label>
-        </div>
-        <div class="input-field col s6">
-          <i class="material-icons prefix">phone</i>
-          <input id="your_mob2" type="number" class="validate" name="mobile2" required>
-          <label for="your_mob2">Mobile no.</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s6">
-          <i class="material-icons prefix"><i class="fa fa-github" aria-hidden="true"></i></i>
-          <input id="git_url2" type="url" class="validate" name="git_url2" required>
-          <label for="git_url2">GitHub URL</label>
-        </div>
-        <div class="input-field col s6">
-          <i class="material-icons prefix"><i class="fa fa-linkedin-square" aria-hidden="true"></i>
-            </i>
-          <input id="link_url2" type="url" class="validate" name="link_url2" required>
-          <label for="link_url2">LinkedIn URL</label>
-        </div>
-		</div>
-   <div class="row">
-        <div class="input-field col s6">
-          <i class="material-icons prefix"><i class="fa fa-twitter" aria-hidden="true"></i></i>
-          <input id="twit_url2" type="url" class="validate" name="twit_url2" required>
-          <label for="twit_url2">Twitter URL</label>
-        </div>
-        <div class="input-field col s6">
-          <i class="material-icons prefix"><i class="fa fa-facebook-square" aria-hidden="true"></i></i>
-          <input id="face_url2" type="url" class="validate" name="face_url2" required>
-          <label for="face_url2">Facebook URL</label>
-        </div>
-		</div>
-   <div class="row">
-   <div class="file-field input-field col s6">
-      <div class="btn">
-        <span>Upload resume</span>
-        <input type="file" name="resume2">
-      </div>
-      <div class="file-path-wrapper">
-        <input class="file-path validate" type="text">
-      </div>
-    </div>
-         </div></div></div>
-            <div style="background-color: whitesmoke;padding-top: 10px"> <div style="width:80%">
-     <h3>Member 3</h3>
-      <div class="row">
-        <div class="input-field col s12">
-          <i class="material-icons prefix">account_circle</i>
-          <input id="full_name3" type="text" class="validate" name="full_name3" required>
-          <label for="full_name3">Full Name</label>
-        </div>
-		</div>
-      <div class="row">
-       <div class="input-field col s6">
-          <i class="material-icons prefix">calendar_today</i>
-           <input id="dob3" type="date" class="datepicker" name="dob3">
-          <label for="dob3">Date of birth</label>
-        </div>
-        <div class="input-field col s6" style="padding-left: 10px">
-    <select name="gender3">
-      <option value="male" selected>Male</option>
-      <option value="female">Female</option>
-    </select>
-    <label>Gender</label>
-        </div>
-        
-      </div>
-      <div class="row">
-       <div class="input-field col s6">
-          <i class="material-icons prefix">email</i>
-          <input id="email1" name="email1" type="email" class="validate">
-          <label for="email1">Email</label>
-        </div>
-        <div class="input-field col s6">
-          <i class="material-icons prefix">phone</i>
-          <input id="your_mob3" type="number" class="validate" name="mobile3" required>
-          <label for="your_mob3">Mobile no.</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s6">
-          <i class="material-icons prefix"><i class="fa fa-github" aria-hidden="true"></i></i>
-          <input id="git_url3" type="url" class="validate" name="git_url3" required >
-          <label for="git_url3">GitHub URL</label>
-        </div>
-        <div class="input-field col s6">
-          <i class="material-icons prefix"><i class="fa fa-linkedin-square" aria-hidden="true"></i>
-            </i>
-          <input id="link_url3" type="url" class="validate" name="link_url3" required >
-          <label for="link_url3">LinkedIn URL</label>
-        </div>
-		</div>
-   <div class="row">
-        <div class="input-field col s6">
-          <i class="material-icons prefix"><i class="fa fa-twitter" aria-hidden="true"></i></i>
-          <input id="twit_url3" type="url" class="validate" name="twit_url3" required >
-          <label for="twit_url3">Twitter URL</label>
-        </div>
-        <div class="input-field col s6">
-          <i class="material-icons prefix"><i class="fa fa-facebook-square" aria-hidden="true"></i></i>
-          <input id="face_url3" type="url" class="validate" name="face_url3" required >
-          <label for="face_url3">Facebook URL</label>
-        </div>
-		</div>
-   <div class="row">
-   <div class="file-field input-field col s6">
-      <div class="btn">
-        <span>Upload resume</span>
-        <input type="file" name="resume3">
-      </div>
-      <div class="file-path-wrapper">
-        <input class="file-path validate" type="text">
-      </div>
-    </div>
-</div>
-</div></div>
-                
-<div style="background-color: white;padding-top: 10px"> <div style="width:80%">
-     <h3>Extras</h3>
-     <div class="row">
-        <div class="input-field col s12">
-          <textarea id="textarea1" class="materialize-textarea" name="need"></textarea>
-          <label for="textarea1">Any special needs?</label>
-        </div>
-  </div>
-     <div class="row">
-        <div class="input-field col s6" style="margin-top: 0">
-          <label>New to Hackathons?</label><br><br>
-              <p>
-      <input name="new" class="with-gap" type="radio" id="test1" />
-      <label for="test1">Yes</label>
-    </p>
-    <p>
-      <input name="new" class="with-gap" type="radio" id="test2" />
-      <label for="test2">No</label>
-    </p>
-        </div>
-        <div class="input-field col s6">
-          <label>Interested in Workshop?</label><br><br>
-              <p>
-      <input name="work" class="with-gap" type="radio" id="test3" />
-      <label for="test3">Yes</label>
-    </p>
-    <p>
-      <input name="work" class="with-gap" type="radio" id="test4" />
-      <label for="test4">No</label>
-    </p>
-        </div>
-  </div>
-	<div class="row">
-        <div class="input-field col s12">
-          <textarea id="textarea2" class="materialize-textarea" name="how"></textarea>
-          <label for="textarea2">How did you hear about us?</label>
-        </div>
-  </div>
+        <div style="background-color: whitesmoke;padding-top: 10px">
+          <div style="width:80%">
+            <h3>Member 3</h3>
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="full_name3" type="text" class="validate" name="full_name3" required>
+                <label for="full_name3">Full Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">calendar_today</i>
+                <input id="dob3" type="date" class="datepicker" name="dob3">
+                <label for="dob3">Date of birth</label>
+              </div>
+              <div class="input-field col s6" style="padding-left: 10px">
+                <select name="gender3">
+                  <option value="male" selected>Male</option>
+                  <option value="female">Female</option>
+                </select>
+                <label>Gender</label>
+              </div>
 
-     </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">email</i>
+                <input id="email1" name="email1" type="email" class="validate">
+                <label for="email1">Email</label>
+              </div>
+              <div class="input-field col s6">
+                <i class="material-icons prefix">phone</i>
+                <input id="your_mob3" type="number" class="validate" name="mobile3" required>
+                <label for="your_mob3">Mobile no.</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix"><i class="fa fa-github" aria-hidden="true"></i></i>
+                <input id="git_url3" type="url" class="validate" name="git_url3" required>
+                <label for="git_url3">GitHub URL</label>
+              </div>
+              <div class="input-field col s6">
+                <i class="material-icons prefix"><i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </i>
+                <input id="link_url3" type="url" class="validate" name="link_url3" required>
+                <label for="link_url3">LinkedIn URL</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix"><i class="fa fa-twitter" aria-hidden="true"></i></i>
+                <input id="twit_url3" type="url" class="validate" name="twit_url3" required>
+                <label for="twit_url3">Twitter URL</label>
+              </div>
+              <div class="input-field col s6">
+                <i class="material-icons prefix"><i class="fa fa-facebook-square" aria-hidden="true"></i></i>
+                <input id="face_url3" type="url" class="validate" name="face_url3" required>
+                <label for="face_url3">Facebook URL</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="file-field input-field col s6">
+                <div class="btn">
+                  <span>Upload resume</span>
+                  <input type="file" name="resume3">
+                </div>
+                <div class="file-path-wrapper">
+                  <input class="file-path validate" type="text">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="background-color: white;padding-top: 10px">
+          <div style="width:80%">
+            <h3>Extras</h3>
+            <div class="row">
+              <div class="input-field col s12">
+                <textarea id="textarea1" class="materialize-textarea" name="need"></textarea>
+                <label for="textarea1">Any special needs?</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6" style="margin-top: 0">
+                <label>New to Hackathons?</label><br><br>
+                <p>
+                  <input name="new" class="with-gap" type="radio" id="test1" />
+                  <label for="test1">Yes</label>
+                </p>
+                <p>
+                  <input name="new" class="with-gap" type="radio" id="test2" />
+                  <label for="test2">No</label>
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <textarea id="textarea2" class="materialize-textarea" name="how"></textarea>
+                <label for="textarea2">How did you hear about us?</label>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <button id="f" class="btn waves-effect waves-light" type="submit" name="action">Submit
+          <i class="material-icons right">send</i>
+        </button>
+      </form>
     </div>
-        
-    <button id="f" class="btn waves-effect waves-light" type="submit" name="action">Submit
-    <i class="material-icons right">send</i>
-  </button>
-</form>
-	</div>
-</center>
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.waypoints.min.js"></script>
-<script src="js/jquery.stellar.min.js"></script>
-<script src="js/main.js"></script>
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-<script src="js/init.js"></script>
+  </center>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/init.js"></script>
 </body>
-</html>	
+
+</html>
