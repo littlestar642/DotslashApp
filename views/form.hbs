@@ -68,7 +68,7 @@ label {
   <!-- /Header -->
   <center>
     <div class="row">
-      <form class="col s12" method="post" id="form" action="">
+      <form class="col s12" id="form" action="">
         <div style="background-color: white">
           <div style="width:80%">
             <div class="row" style="margin-top: 100px">
@@ -153,6 +153,11 @@ label {
                 <input id="drive_url1" type="url" class="validate" name="resume_url" required>
                 <label for="drive_url1">A Google Drive link or a Portfolio Website</label>
               </div>
+              <div class="input-field col s6 res">
+                <i class="material-icons prefix"><i class="fa fa-shirtsinbulk" aria-hidden="true"></i></i>
+                <input id="tSize1" type="text" class="validate" name="shirt-size">
+                <label for="tSize1">T-shirt Size</label>
+              </div>
             </div>
           </div>
         </div>
@@ -222,6 +227,11 @@ label {
                 <i class="material-icons prefix"><i class="fa fa-address-card" aria-hidden="true"></i></i>
                 <input id="resume_url2" type="url" class="validate" name="resume_url">
                 <label for="resume_url2">A Google Drive link or a Portfolio Website</label>
+              </div>
+              <div class="input-field col s6 res">
+                <i class="material-icons prefix"><i class="fa fa-shirtsinbulk" aria-hidden="true"></i></i>
+                <input id="tSize2" type="text" class="validate" name="shirt-size">
+                <label for="tSize2">T-shirt Size</label>
               </div>
             </div>
           </div>
@@ -294,6 +304,11 @@ label {
                 <input id="resume_url3" type="url" class="validate" name="resume_url">
                 <label for="resume_url3">A Google Drive link or a Portfolio Website</label>
               </div>
+              <div class="input-field col s6 res">
+                <i class="material-icons prefix"><i class="fa fa-shirtsinbulk" aria-hidden="true"></i></i>
+                <input id="tSize3" type="text" class="validate" name="shirt-size">
+                <label for="tSize3">T-shirt Size</label>
+              </div>
             </div>
           </div>
         </div>
@@ -330,7 +345,7 @@ label {
           </div>
         </div>
 
-        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+        <button id="f" class="btn waves-effect waves-light" type="submit" name="action">Submit
           <i class="material-icons right">send</i>
         </button>
       </form>
@@ -340,29 +355,12 @@ label {
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.waypoints.min.js"></script>
   <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/main.js"></script>
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.28.4/dist/sweetalert2.all.min.js"></script>
   <script src="js/form.js"></script>
   <script src="js/init.js"></script>
-  <script>
-      jQuery(document).ready(function($) {
-        let alterClass = function() {
-        let ww = document.body.clientWidth;
-        if (ww < 400) {
-            $('.res').removeClass('s6').addClass('s12');
-        } else if (ww >= 401) {
-            $('.res').removeClass('s12').addClass('s6');
-        };
-        };
-      $(window).resize(function(){
-          alterClass();
-        });
-          alterClass();
-      });
-    </script>
 </body>
 
 </html>
