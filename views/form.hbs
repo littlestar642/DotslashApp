@@ -16,6 +16,7 @@
   <link type="text/css" rel="stylesheet" href="css/style.css" />
 
   <!-- CSS  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@7.28.4/dist/sweetalert2.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -34,6 +35,9 @@ label {
   font-family: 'Raleway', sans-serif;
 }
 </style>
+{{!-- TODO: 1. Make the form responsive. Add every field in a new line in mobile view
+            2. Remove required attributes from member 2 and member 3 and from URLs of github,linkedin etc   .
+            3. Replace upload resume field with a field to take urls like the one did for member 2 --}}
 
 <body>
   <!-- Header -->
@@ -67,7 +71,7 @@ label {
   <!-- /Header -->
   <center>
     <div class="row">
-      <form class="col s12" method="post" action="">
+      <form class="col s12" method="post" id="form" action="">
         <div style="background-color: white">
           <div style="width:80%">
             <div class="row" style="margin-top: 100px">
@@ -103,7 +107,7 @@ label {
                 <label for="dob1">Date of birth</label>
               </div>
               <div class="input-field col s6" style="padding-left: 10px">
-                <select name="gender1">
+                <select id="select1" name="gender1">
                   <option value="male" selected>Male</option>
                   <option value="female">Female</option>
                 </select>
@@ -147,14 +151,10 @@ label {
               </div>
             </div>
             <div class="row">
-              <div class="file-field input-field col s6">
-                <div class="btn">
-                  <span>Upload resume</span>
-                  <input type="file" name="resume1">
-                </div>
-                <div class="file-path-wrapper">
-                  <input class="file-path validate" type="text">
-                </div>
+              <div class="input-field col s6">
+                <i class="material-icons prefix"><i class="fa fa-address-card" aria-hidden="true"></i></i>
+                <input id="drive_url1" type="url" class="validate" name="resume_url" required>
+                <label for="drive_url1">A Google Drive link or a Portfolio Website</label>
               </div>
             </div>
           </div>
@@ -176,7 +176,7 @@ label {
                 <label for="dob2">Date of birth</label>
               </div>
               <div class="input-field col s6" style="padding-left: 10px">
-                <select name="gender2">
+                <select id="select2" name="gender2">
                   <option value="male" selected>Male</option>
                   <option value="female">Female</option>
                 </select>
@@ -223,8 +223,8 @@ label {
             <div class="row">
               <div class="input-field col s6">
                 <i class="material-icons prefix"><i class="fa fa-address-card" aria-hidden="true"></i></i>
-                <input id="face_url2" type="url" class="validate" name="resume_url" required>
-                <label for="face_url2">A Google Drive link or a Portfolio Website</label>
+                <input id="resume_url2" type="url" class="validate" name="resume_url" required>
+                <label for="resume_url2">A Google Drive link or a Portfolio Website</label>
               </div>
             </div>
           </div>
@@ -246,7 +246,7 @@ label {
                 <label for="dob3">Date of birth</label>
               </div>
               <div class="input-field col s6" style="padding-left: 10px">
-                <select name="gender3">
+                <select id="select3" name="gender3">
                   <option value="male" selected>Male</option>
                   <option value="female">Female</option>
                 </select>
@@ -292,14 +292,10 @@ label {
               </div>
             </div>
             <div class="row">
-              <div class="file-field input-field col s6">
-                <div class="btn">
-                  <span>Upload resume</span>
-                  <input type="file" name="resume3">
-                </div>
-                <div class="file-path-wrapper">
-                  <input class="file-path validate" type="text">
-                </div>
+              <div class="input-field col s6">
+                <i class="material-icons prefix"><i class="fa fa-address-card" aria-hidden="true"></i></i>
+                <input id="resume_url3" type="url" class="validate" name="resume_url" required>
+                <label for="resume_url3">A Google Drive link or a Portfolio Website</label>
               </div>
             </div>
           </div>
@@ -318,7 +314,7 @@ label {
               <div class="input-field col s6" style="margin-top: 0">
                 <label>New to Hackathons?</label><br><br>
                 <p>
-                  <input name="new" class="with-gap" type="radio" id="test1" />
+                  <input name="new" class="with-gap" type="radio" id="test1" checked/>
                   <label for="test1">Yes</label>
                 </p>
                 <p>
@@ -337,7 +333,7 @@ label {
           </div>
         </div>
 
-        <button id="f" class="btn waves-effect waves-light" type="submit" name="action">Submit
+        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
           <i class="material-icons right">send</i>
         </button>
       </form>
@@ -350,6 +346,8 @@ label {
   <script src="js/main.js"></script>
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.28.4/dist/sweetalert2.all.min.js"></script>
   <script src="js/form.js"></script>
   <script src="js/init.js"></script>
 </body>
