@@ -48,7 +48,45 @@ jQuery(document).ready(function ($) {
     modalShow();
   })
 
-
+  $('#nextMem').on('change',(e)=>{
+    let mem2=$('.member2');
+    if(e.target.checked===true){
+    mem2.removeClass('hidden');
+    $('#full_name2').prop('required','true');
+    $('#dob2').prop('required','true');
+    $('#email2').prop('required','true');
+    $('#your_mob2').prop('required','true');
+    $('#resume_url2').prop('required','true');
+    }
+    else{
+    $('#full_name2').prop('required','');
+    $('#dob2').prop('required','');
+    $('#email2').prop('required','');
+    $('#your_mob2').prop('required','');
+    $('#resume_url2').prop('required','');
+    mem2.addClass('hidden');
+    }
+  })
+  $('#nextMem2').on('change',(e)=>{
+    let mem3=$('.member3');
+    if(e.target.checked===true){
+    mem3.removeClass('hidden');
+    $('#full_name3').prop('required','true');
+    $('#dob3').prop('required','true');
+    $('#email3').prop('required','true');
+    $('#your_mob3').prop('required','true');
+    $('#resume_url3').prop('required','true');
+    }
+    else{
+    $('#full_name3').prop('required','');
+    $('#dob3').prop('required','');
+    $('#email3').prop('required','');
+    $('#your_mob3').prop('required','');
+    $('#resume_url3').prop('required','');
+    mem3.addClass('hidden');
+    
+    }
+  })
 
 
   $('#form').on('submit', (e) => {

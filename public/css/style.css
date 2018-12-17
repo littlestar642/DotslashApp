@@ -272,6 +272,9 @@ textarea.input {
   transition: 0.3s all;
 }
 
+.hidden{
+  display: none;
+}
 #header.transparent-navbar .main-nav li a {
   color: #bd0c0e;
 }

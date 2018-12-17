@@ -36,6 +36,7 @@ label {
   font-family: 'Raleway', sans-serif;
 }
 </style>
+
 <body>
   <!-- Header -->
   <header id="header" class="transparent-navbar">
@@ -159,9 +160,16 @@ label {
                 <label for="tSize1">T-shirt Size</label>
               </div>
             </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="nextMem" type="checkbox" name="checkFor2">
+                <label for="nextMem">Add 2nd Member</label>
+              </div>
+            </div>
+
           </div>
         </div>
-        <div style="background-color: white;padding-top: 10px">
+        <div style="background-color: white;padding-top: 10px" class="hidden member2">
           <div style="width:80%">
             <h3>Member 2</h3>
             <div class="row">
@@ -234,9 +242,15 @@ label {
                 <label for="tSize2">T-shirt Size</label>
               </div>
             </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="nextMem2" type="checkbox" name="checkFor3">
+                <label for="nextMem2">Add 3rd Member</label>
+              </div>
+            </div>
           </div>
         </div>
-        <div style="background-color: whitesmoke;padding-top: 10px">
+        <div style="background-color: whitesmoke;padding-top: 10px" class="hidden member3">
           <div style="width:80%">
             <h3>Member 3</h3>
             <div class="row">
@@ -326,7 +340,7 @@ label {
               <div class="input-field col s6 res" style="margin-top: 0">
                 <label>New to Hackathons?</label><br><br>
                 <p>
-                  <input name="new" class="with-gap" type="radio" id="test1" checked/>
+                  <input name="new" class="with-gap" type="radio" id="test1" checked />
                   <label for="test1">Yes</label>
                 </p>
                 <p>
