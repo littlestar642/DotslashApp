@@ -262,7 +262,9 @@ textarea.input {
     transform: translateY(0%);
   }
 }
-
+.text-center{
+  text-align: center;
+}
 .main-nav li a {
   position: relative;
   padding: 30px 15px;

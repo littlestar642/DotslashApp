@@ -127,7 +127,7 @@ label {
             <div class="row">
               <div class="input-field col s6 res">
                 <i class="material-icons prefix"><i class="fa fa-github" aria-hidden="true"></i></i>
-                <input id="git_url1" type="url" class="validate" name="git_url1">
+                <input id="git_url1" type="url" class="validate" name="git_url1" required>
                 <label for="git_url1">GitHub URL</label>
               </div>
               <div class="input-field col s6 res">
@@ -155,9 +155,13 @@ label {
                 <label for="drive_url1">A Google Drive link of your resume or a Portfolio Website</label>
               </div>
               <div class="input-field col s6 res">
-                <i class="material-icons prefix"><i class="fa fa-shirtsinbulk" aria-hidden="true"></i></i>
-                <input id="tSize1" type="text" class="validate" name="shirt-size">
-                <label for="tSize1">T-shirt Size</label>
+                <select id="tshirt1" name="tshirt1" required>
+                  <option value="S" selected>S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                </select>
+                <label for="tshirt1">T-shirt Size</label>
               </div>
             </div>
             <div class="row">
@@ -237,9 +241,13 @@ label {
                 <label for="resume_url2">A Google Drive link of your resume or a Portfolio Website</label>
               </div>
               <div class="input-field col s6 res">
-                <i class="material-icons prefix"><i class="fa fa-shirtsinbulk" aria-hidden="true"></i></i>
-                <input id="tSize2" type="text" class="validate" name="shirt-size">
-                <label for="tSize2">T-shirt Size</label>
+                <select id="tshirt2" name="tshirt2">
+                  <option value="S" selected>S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                </select>
+                <label for="tshirt2">T-shirt Size</label>
               </div>
             </div>
             <div class="row">
@@ -250,6 +258,7 @@ label {
             </div>
           </div>
         </div>
+        
         <div style="background-color: whitesmoke;padding-top: 10px" class="hidden member3">
           <div style="width:80%">
             <h3>Member 3</h3>
@@ -319,9 +328,13 @@ label {
                 <label for="resume_url3">A Google Drive link of your resume or a Portfolio Website</label>
               </div>
               <div class="input-field col s6 res">
-                <i class="material-icons prefix"><i class="fa fa-shirtsinbulk" aria-hidden="true"></i></i>
-                <input id="tSize3" type="text" class="validate" name="shirt-size">
-                <label for="tSize3">T-shirt Size</label>
+                <select id="tshirt3" name="tshirt3">
+                  <option value="S" selected>S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                </select>
+                <label for="tshirt3">T-shirt Size</label>
               </div>
             </div>
           </div>
@@ -351,7 +364,13 @@ label {
             </div>
             <div class="row">
               <div class="input-field col s12">
-                <textarea id="textarea2" class="materialize-textarea" name="how"></textarea>
+                <select id="textarea2" name="textarea2">
+                  <option value="socialMed" selected>Social Media sites like facebook, twitter etc.</option>
+                  <option value="friend">A friend or a Relative</option>
+                  <option value="College">College Notice board</option>
+                  <option value="hackathon.com">From sites like hackathon.com or devpost.com</option>
+                  <option value="others">Others</option>
+                </select>
                 <label for="textarea2">How did you hear about us?</label>
               </div>
             </div>
