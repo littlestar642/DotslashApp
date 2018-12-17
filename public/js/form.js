@@ -96,63 +96,77 @@ jQuery(document).ready(function ($) {
     let needs = $('#textarea1').val() || 'none';
     let hearing = $('#textarea2').val() || 'none';
 
-    db.collection("users").add({
-        tName,
-        collName,
-        members: [{
-            fname1,
-            dob1,
-            sel1,
-            email1,
-            mob1,
-            git1,
-            link1,
-            twit1,
-            face1
-          },
-          {
-            fname2,
-            dob2,
-            sel2,
-            email2,
-            mob2,
-            git2,
-            link2,
-            twit2,
-            face2
-          },
-          {
-            fname3,
-            dob3,
-            sel3,
-            email3,
-            mob3,
-            git3,
-            link3,
-            twit3,
-            face3
-          }
-        ],
-        needs,
-        hearing,
-        radioval
-
-      })
-      .then(function (docRef) {
-        Swal({
-          title: 'Success!',
-          text: 'We recieved your form! Thank you for your participation',
-          type: 'success',
-          confirmButtonText: 'Cool'
-        }).then(() => {
-          document.location.href = '/';
+    swal({
+      title:'<h2>Submission</h2>',
+      html:`<h3>Are you sure you want to submit?</h3>`,
+      type:'warning',
+      confirmButtonText:'Yes',
+      showCancelButton:true,
+      allowEnterKey:false
+    }).then((val)=>{
+      if(val.value===true){
+        db.collection("users").add({
+          tName,
+          collName,
+          members: [{
+              fname1,
+              dob1,
+              sel1,
+              email1,
+              mob1,
+              git1,
+              link1,
+              twit1,
+              face1
+            },
+            {
+              fname2,
+              dob2,
+              sel2,
+              email2,
+              mob2,
+              git2,
+              link2,
+              twit2,
+              face2
+            },
+            {
+              fname3,
+              dob3,
+              sel3,
+              email3,
+              mob3,
+              git3,
+              link3,
+              twit3,
+              face3
+            }
+          ],
+          needs,
+          hearing,
+          radioval
+  
         })
-      })
-      .catch(function (error) {
-        alert('The Document was not uploaded. Please check your internet or browser console for more information.');
-        console.log(error)
-        return;
-      });
+        .then(function (docRef) {
+          Swal({
+            title: 'Success!',
+            text: 'We recieved your form! Thank you for your participation',
+            type: 'success',
+            confirmButtonText: 'Cool'
+          }).then(() => {
+            document.location.href = '/';
+          })
+        })
+        .catch(function (error) {
+          alert('The Document was not uploaded. Please check your internet or browser console for more information.');
+          console.log(error)
+          return;
+        });
+      }
+      
+    })
+
+    
     return;
   })
 });
