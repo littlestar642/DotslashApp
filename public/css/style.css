@@ -57,6 +57,9 @@ h2 {
   font-size: 31px;
 }
 
+h6{
+  font-size: 25px;
+}
 h3 {
   font-size: 22px;
 }
@@ -86,7 +89,9 @@ ul, ol {
   padding: 0;
   list-style: none
 }
-
+.font1{
+  color:#bd0c0e;
+}
 .main-btn {
   display: inline-block;
   padding: 14px 50px;
