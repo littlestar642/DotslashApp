@@ -18,9 +18,9 @@ function modalShow() {
     title: `<h2>Instructions!</h2>`,
     html: `<ol>
     <li><b>1. </b>Please ensure that all the team members are from the same college. We do not allow teams formed across colleges.</li>
-    <li><b>2. </b>You can have at max 3 members in every team. Minimum is one!</li>
-    <li><b>3.</b> Every URL in the form accepts links that starts with <u>https://</u> to ensure security.</li>
-    <li><b>4.</b> You are not allowed to submit multiple forms and your first entry will only be considered as valid. Please be very sure before submitting the form!</li>
+    <li><b>2. </b>You can have at max 3 members in every team. Minimum is one😉</li>
+    <li><b>3.</b> Every URL in the form accepts links that starts with <code>https://</code> or <code>http://</code> to ensure security.</li>
+    <li><b>4.</b> You are not allowed to submit multiple forms and your first entry will only be considered as valid. Please be very sure before you submit!</li>
     <li><b>5.</b> In case of any query feel free to contact us at <code>contact@hackdotslash.co.in</code></li>
   </ol>`,
     type: 'info',
