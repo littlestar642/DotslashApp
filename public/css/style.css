@@ -267,7 +267,9 @@ textarea.input {
     transform: translateY(0%);
   }
 }
-
+.text-center{
+  text-align: center;
+}
 .main-nav li a {
   position: relative;
   padding: 30px 15px;
@@ -277,6 +279,9 @@ textarea.input {
   transition: 0.3s all;
 }
 
+.hidden{
+  display: none;
+}
 #header.transparent-navbar .main-nav li a {
   color: #bd0c0e;
 }
