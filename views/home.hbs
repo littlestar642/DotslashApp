@@ -44,12 +44,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
 </head>
 <style>
-<<<<<<< HEAD
     .rotate {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 }
+    .logofixer {
+        width: 250px;
+    }
     </style>
 <body>
 
@@ -62,7 +64,7 @@
         <!-- Logo -->
         <div class="navbar-brand">
           <a class="logo" href="/">
-            <img class="logo-img" src="./img/image.png" alt="logo">
+            <img class="logo-img logofix" src="./img/image.png" alt="logo">
             <img class="logo-alt-img" src="./img/logo_final13.png" alt="logo">
           </a>
         </div>
@@ -853,7 +855,24 @@
       for(let i=0;i<12;i++){
     $('.arrow'+i).on("click", function (event) {
     $('.arrow-img'+i).toggleClass('rotate');
-});}</script>
+});}
+    
+    jQuery(document).ready(function($) {
+        let alterClass = function() {
+        let ww = document.body.clientWidth;
+        if (ww < 412) {
+            $('.logofix').addClass('logofixer');
+        } else if (ww >= 413) {
+            $('.logofix').removeClass('logofixer');
+        };
+        };
+      $(window).resize(function(){
+          alterClass();
+        });
+          alterClass();
+      });  
+      
+    </script>
 </body>
 
 </html>
