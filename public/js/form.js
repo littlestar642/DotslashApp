@@ -119,7 +119,7 @@ jQuery(document).ready(function ($) {
     let link1 = $('#link_url1').val() || 'none';
     let twit1 = $('#twit_url1').val() || 'none';
     let face1 = $('#face_url1').val() || 'none';
-    let tShirt1 = $('#tShirt1').val() || 'none';
+    let tShirt1 = $('#tshirt1').val() || 'none';
 
     let fname2 = $('#full_name2').val() || 'none';
     let dob2 = $('#dob2').val() || 'none';
@@ -130,7 +130,7 @@ jQuery(document).ready(function ($) {
     let link2 = $('#link_url2').val() || 'none';
     let twit2 = $('#twit_url2').val() || 'none';
     let face2 = $('#face_url2').val() || 'none';
-    let tShirt2 = $('#tShirt2').val() || 'none';
+    let tShirt2 = $('#tshirt2').val() || 'none';
 
     let fname3 = $('#full_name3').val() || 'none';
     let dob3 = $('#dob3').val() || 'none';
@@ -141,7 +141,7 @@ jQuery(document).ready(function ($) {
     let link3 = $('#link_url3').val() || 'none';
     let twit3 = $('#twit_url3').val() || 'none';
     let face3 = $('#face_url3').val() || 'none';
-    let tShirt3 = $('#tShirt3').val() || 'none';
+    let tShirt3 = $('#tshirt3').val() || 'none';
     let firstTime = 'yes';
     if (document.querySelector('#test1').checked) radioval = 'yes'
     else if (document.querySelector('#test2').checked) radioval = 'no';
