@@ -16,7 +16,8 @@ db.settings({
 function modalShow() {
   Swal({
     title: `<h2>Instructions!</h2>`,
-    html: `<ol>
+    html: `<h5>The Deadline for Registrations is 15th January 2019</h5>
+    <ol>
     <li><b>1. </b>Please ensure that all the team members are from the same college. We do not allow teams formed
       across colleges.</li>
     <li><b>2. </b>You can have at max 3 members in every team. Minimum is one😉</li>
@@ -62,7 +63,7 @@ jQuery(document).ready(function ($) {
     $('#your_mob2').prop('required','true');
     $('#resume_url2').prop('required','true');
     $('#git_url2').prop('required','true');
-    $('#tShirt2').prop('required','true');
+    $('#tshirt2').prop('required','true');
     }
     else{
     $('.member2 input').val('');
@@ -73,7 +74,7 @@ jQuery(document).ready(function ($) {
     $('#your_mob2').prop('required','');
     $('#resume_url2').prop('required','');
     $('#git_url2').prop('required','');
-    $('#tShirt2').prop('required','');
+    $('#tshirt2').prop('required','');
     mem2.addClass('hidden');
     }
   })
@@ -87,7 +88,7 @@ jQuery(document).ready(function ($) {
     $('#your_mob3').prop('required','true');
     $('#resume_url3').prop('required','true');
     $('#git_url3').prop('required','true');
-    $('#tShirt3').prop('required','true');    
+    $('#tshirt3').prop('required','true');    
     }
     else{
     $('.member3 input').val('');
@@ -98,7 +99,7 @@ jQuery(document).ready(function ($) {
     $('#your_mob3').prop('required','');
     $('#resume_url3').prop('required','');
     $('#git_url3').prop('required','');
-    $('#tShirt3').prop('required','');
+    $('#tshirt3').prop('required','');
     mem3.addClass('hidden');
     
     }
