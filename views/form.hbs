@@ -126,7 +126,7 @@ label {
             <div class="row">
               <div class="input-field col s6 res">
                 <i class="material-icons prefix"><i class="fa fa-github" aria-hidden="true"></i></i>
-                <input id="git_url1" type="url" class="validate" name="git_url1">
+                <input id="git_url1" type="url" class="validate" name="git_url1" required>
                 <label for="git_url1">GitHub URL</label>
               </div>
               <div class="input-field col s6 res">
@@ -392,22 +392,5 @@ label {
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.28.4/dist/sweetalert2.all.min.js"></script>
   <script src="js/form.js"></script>
   <script src="js/init.js"></script>
-  <script>
-      jQuery(document).ready(function($) {
-        let alterClass = function() {
-        let ww = document.body.clientWidth;
-        if (ww < 400) {
-            $('.res').removeClass('s6').addClass('s12');
-        } else if (ww >= 401) {
-            $('.res').removeClass('s12').addClass('s6');
-        };
-        };
-      $(window).resize(function(){
-          alterClass();
-        });
-          alterClass();
-      });
-    </script>
 </body>
-
 </html>
