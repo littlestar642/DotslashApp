@@ -793,7 +793,7 @@ textarea.input {
 
 .sponsor {
   display: block;
-  opacity: 0.8;
+  opacity: 0.9;
   margin-bottom: 30px;
   -webkit-transition: 0.3s opacity;
   transition: 0.3s opacity;
@@ -805,8 +805,8 @@ textarea.input {
 }
 
 .sponsor>img {
-  height: 100px;
-  width: auto;
+  height: 200px;
+  width: 50%;
 }
 
 /*=========================================================
