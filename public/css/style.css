@@ -389,7 +389,7 @@ textarea.input {
 
 .home-content button{
   position: relative;
-  left:27%;
+  
 }
 
 #page-wrapper {
@@ -813,6 +813,13 @@ textarea.input {
   height: 200px;
   width: auto;
 }
+.home-content{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Devfolio setup */
 #devfolio-apply-now1 {
@@ -832,7 +839,6 @@ textarea.input {
   font-weight: 600;
   padding: 12px 20px;
   text-align: center;
-  text-transform: lowercase;
 
 }
 
@@ -844,6 +850,14 @@ textarea.input {
   background-color: #850a0c;
 }
 
+#devfolio-apply-now1 .logo {
+  /* Please keep the color of Devfolio logo mark either white (#FFFFFF) or black (#000000) */
+  fill: white;
+}
+#devfolio-apply-now2 .logo {
+  /* Please keep the color of Devfolio logo mark either white (#FFFFFF) or black (#000000) */
+  fill: white;
+}
 #devfolio-apply-now2 {
   -ms-flex-align: center;
   -webkit-box-align: center;
@@ -861,9 +875,6 @@ textarea.input {
   font-weight: 600;
   padding: 12px 20px;
   text-align: center;
-  text-transform: lowercase;
-  position: relative;
-  left:30%;
 }
 
 #devfolio-apply-now2:not([disabled]) {
@@ -912,7 +923,12 @@ textarea.input {
   color: #FFF;
   text-transform: capitalize;
 }
-
+.cta-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .cta-content p {
   color: #fff;
 }
@@ -1159,9 +1175,7 @@ textarea.input {
   .event+.event:before {
     left: 45px;
   }
-  .home-content button{
-    position: relative;
-  }
+  
   #devfolio-apply-now2 {
     -ms-flex-align: center;
     -webkit-box-align: center;
@@ -1180,8 +1194,6 @@ textarea.input {
     padding: 12px 20px;
     text-align: center;
     text-transform: lowercase;
-    position: relative;
-    left:27%;
   }
 }
 
@@ -1189,10 +1201,7 @@ textarea.input {
   [class*='col-xs'] {
     width: 100%;
   }
-  .home-content button{
-    position: relative;
-    left:10%;
-  }
+  
   #devfolio-apply-now2 {
     -ms-flex-align: center;
     -webkit-box-align: center;
@@ -1211,7 +1220,6 @@ textarea.input {
     padding: 12px 20px;
     text-align: center;
     text-transform: lowercase;
-    position: relative;
-    left:12%;
+    
   }
 }
