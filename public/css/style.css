@@ -1193,7 +1193,6 @@ textarea.input {
     font-weight: 600;
     padding: 12px 20px;
     text-align: center;
-    text-transform: lowercase;
   }
 }
 
@@ -1219,7 +1218,6 @@ textarea.input {
     font-weight: 600;
     padding: 12px 20px;
     text-align: center;
-    text-transform: lowercase;
     
   }
 }
