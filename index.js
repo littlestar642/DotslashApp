@@ -20,8 +20,8 @@ app.get('/',(req,res)=>{
     res.render('home');
 })
 
-app.get('/formCreate',(req,res)=>{
-    res.render('form');
+app.get('/coc',(req,res)=>{
+    res.render('coc');
 });
 
 
