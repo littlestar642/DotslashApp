@@ -899,6 +899,7 @@ textarea.input {
 }
 .tracks h3{
   color:  #bd0c0e;
+  text-decoration: underline
 }
 .tracks .col-xs-4:hover {
   box-shadow: 0 5px 10px rgb(143, 143, 143);
