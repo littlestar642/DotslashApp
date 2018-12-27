@@ -48,6 +48,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #0b0f28;
   font-weight: 700;
 }
+hr{
+  border-width: 20px;
+}
 
 h1 {
   font-size: 43px;
@@ -803,6 +806,7 @@ textarea.input {
   -webkit-transition: 0.3s opacity;
   transition: 0.3s opacity;
   text-align: center;
+  padding:20px;
 }
 
 .sponsor:hover {
@@ -884,6 +888,30 @@ textarea.input {
 #devfolio-apply-now2:hover {
   background-color: #850a0c;
 }
+
+/* Tracks */
+
+.tracks .col-xs-4{
+  padding:20px;
+  transition: all 0.2s;
+  text-align: center;
+  min-height:500px;
+}
+.tracks h3{
+  color:  #bd0c0e;
+}
+.tracks .col-xs-4:hover {
+  box-shadow: 0 5px 10px rgb(143, 143, 143);
+}
+.tracks img{
+  max-height: 200px;
+  min-width:100%;
+  border-radius: 5px;
+}
+.tracks p{
+  margin-top:20px;
+}
+
 
 
 /*=========================================================
