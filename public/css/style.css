@@ -889,6 +889,21 @@ textarea.input {
 #devfolio-apply-now2:hover {
   background-color: #850a0c;
 }
+#slackBtn{
+  background-color: #bd0c0e;
+  color:white;
+  border-radius: 5px;
+  border: none;
+  height: 40px;
+  width: 200px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  outline: none;
+}
+#slackBtn:hover{
+  background-color: #850a0c;
+}
 
 /* Tracks */
 
